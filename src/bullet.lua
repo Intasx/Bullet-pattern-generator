@@ -1,5 +1,4 @@
 local Class = require("libs/class")
---local HC = require("libs/HC")
 
 local Bullet = Class()
 
