@@ -109,8 +109,8 @@ function Bullet:new(x, y, angle, arrayId)
 	local h = self.bulletImage and self.bulletImage:getHeight() or 5
 
 	return {
-		x = x + w + math.cos(angle) + self.xOffset,
-		y = y + h + math.sin(angle) + self.yOffset,
+		x = x + w + self.xOffset,
+		y = y + h + self.yOffset,
 		speed = self.bulletSpeed,
 		angle = angle,
 		arrayId = arrayId
