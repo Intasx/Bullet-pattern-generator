@@ -352,7 +352,9 @@ end
 function Bullet:draw()
 	for _, bullet in ipairs(self.createdBullets) do
 		if (self.bulletImage) then
-			love.graphics.draw(self.bulletImage, bullet.x, bullet.y, bullet.angle)
+			local xOffset = math.floor(self.bulletImage:getWidth()/2)
+			local yOffset = math.floor(self.bulletImage:getHeight()/2)
+			love.graphics.draw(self.bulletImage, bullet.x, bullet.y, bullet.angle, 1, 1, xOffset, yOffset)
 		else
 			love.graphics.rectangle("fill", bullet.x, bullet.y, 5, 5)
 		end
