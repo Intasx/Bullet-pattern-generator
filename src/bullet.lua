@@ -331,7 +331,7 @@ local function drawText(self, colored)
 		"x offset:",
 		"y offset:",
 		"FPS:",
-		"Bullets in screen:"
+		"Bullets on screen:"
 	}
 	local settings = "\nQ: Follow mouse.\nW: Set coordinates to default values."
 	local t = {}
